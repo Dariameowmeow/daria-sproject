@@ -1,1 +1,54 @@
+body {
+    background-color: 	#c2c3ff;
+}
+
+h1 {
+    color: red;
+    font-style: italic;
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    color: #aa6f73;
+    font-style: normal;
+    font-size: 45px;
+}
+
+a {
+    color:blanchedalmond;
+    font-size: 35px;
+}
+
+.meow {
+    color: red;
+    font-style: italic;
+    font-size: 100px;
+    text-align: center;
+}
+
+.hM {
+    color: #aa6f73;
+    font-style: oblique;
+    font-size: 50px;
+    text-align: left;
+    background-color: brown;
+}
+
+h3 {
+    color: 	#8d988d;
+    font-style: inherit;
+    font-size: 49px;
+}
+
+.home {
+    color: blanchedalmond;
+    font-size: 35px;
+}
+
+.index {
+    color: blanchedalmond;
+    font-size: 35px;
+}
+
 
