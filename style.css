@@ -1,54 +1,19 @@
-body {
-    background-color: 	#c2c3ff;
+head{
+    background-color: cornflowerblue;
 }
 
-h1 {
-    color: red;
-    font-style: italic;
-    font-size: 100px;
-    text-align: center;
+div{
+    background-color: darksalmon;
 }
 
-h2 {
-    color: #aa6f73;
-    font-style: normal;
-    font-size: 45px;
+.navbar{
+    background-color: deeppink;
 }
 
-a {
-    color:blanchedalmond;
-    font-size: 35px;
+.content{
+    background-color: azure;
 }
 
-.meow {
-    color: red;
-    font-style: italic;
-    font-size: 100px;
-    text-align: center;
+.footer{
+    background-color: darkseagreen;
 }
-
-.hM {
-    color: #aa6f73;
-    font-style: oblique;
-    font-size: 50px;
-    text-align: left;
-    background-color: brown;
-}
-
-h3 {
-    color: 	#8d988d;
-    font-style: inherit;
-    font-size: 49px;
-}
-
-.home {
-    color: blanchedalmond;
-    font-size: 35px;
-}
-
-.index {
-    color: blanchedalmond;
-    font-size: 35px;
-}
-
-
