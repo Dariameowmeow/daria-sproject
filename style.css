@@ -17,3 +17,21 @@ div{
 .footer{
     background-color: darkseagreen;
 }
+body {
+  background-color: #7e9a9a;
+}
+h1 {
+  color: #0049b7;
+}
+
+h2 {
+  color: #4a7ba6;
+}
+p {
+  color: blanchedalmond;
+}
+
+.footer {
+  color: blue;
+}
+
