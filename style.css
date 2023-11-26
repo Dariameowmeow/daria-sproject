@@ -127,3 +127,45 @@ footer::before {
     content: "Last updated: "; /* Add content before the footer text */
     color: #999;
 }
+
+/* Add this CSS to your style.css file */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.filtered-image {
+    width: 100%;
+    max-width: 400px;
+    filter: grayscale(50%) blur(4px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
