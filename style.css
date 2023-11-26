@@ -31,6 +31,53 @@ p {
   color: blanchedalmond;
 }
 
+/* Add this CSS to your style.css file */
+
+/* Pseudo-classes */
+a:hover {
+    color: red; /* Change link color on hover */
+}
+
+nav li:nth-child(odd) {
+    background-color: #f0f0f0; /* Apply background color to odd list items in the navigation */
+}
+
+article:first-child {
+    border-top: 2px solid #333; /* Add a top border to the first article in the main content */
+}
+
+footer:after {
+    content: " - All rights reserved"; /* Add content after the footer text */
+    color: #666;
+}
+
+/* Pseudo-elements */
+body::before {
+    content: "🌟"; /* Add content before the entire body */
+    font-size: 2em;
+    color: #ffcc00;
+}
+
+article::after {
+    content: "Read More"; /* Add content after each article */
+    display: block;
+    color: #0088cc;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav a::before {
+    content: "\2022"; /* Add a bullet before each navigation link */
+    margin-right: 5px;
+    color: #333;
+}
+
+footer::before {
+    content: "Last updated: "; /* Add content before the footer text */
+    color: #999;
+}
+
+
 .footer {
   color: blue;
 }
