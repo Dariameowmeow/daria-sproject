@@ -1,281 +1,144 @@
-head{
-    background-color: cornflowerblue;
-}
-
-div{
-    background-color: darksalmon;
-}
-
-.navbar{
-    background-color: deeppink;
-}
-
-.content{
-    background-color: azure;
-}
-
-.footer{
-    background-color: darkseagreen;
-}
-body {
-  background-color: #7e9a9a;
-}
-h1 {
-  color: #0049b7;
-}
-
-h2 {
-  color: #4a7ba6;
-}
-p {
-  color: blanchedalmond;
-}
-
-/* Add this CSS to your style.css file */
-
-/* Pseudo-classes */
-a:hover {
-    color: red; /* Change link color on hover */
-}
-
-nav li:nth-child(odd) {
-    background-color: #f0f0f0; /* Apply background color to odd list items in the navigation */
-}
-
-article:first-child {
-    border-top: 2px solid #333; /* Add a top border to the first article in the main content */
-}
-
-footer:after {
-    content: " - All rights reserved"; /* Add content after the footer text */
-    color: #666;
-}
-
-/* Pseudo-elements */
-body::before {
-    content: "🌟"; /* Add content before the entire body */
-    font-size: 2em;
-    color: #ffcc00;
-}
-
-article::after {
-    content: "Read More"; /* Add content after each article */
-    display: block;
-    color: #0088cc;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-nav a::before {
-    content: "\2022"; /* Add a bullet before each navigation link */
-    margin-right: 5px;
-    color: #333;
-}
-
-footer::before {
-    content: "Last updated: "; /* Add content before the footer text */
-    color: #999;
-}
-
-
-.footer {
-  color: blue;
-}
-
-/* Add this CSS to your style.css file */
-
-/* Pseudo-classes */
-a:hover {
-    color: red; /* Change link color on hover */
-}
-
-nav li:nth-child(odd) {
-    background-color: #f0f0f0; /* Apply background color to odd list items in the navigation */
-}
-
-article:first-child {
-    border-top: 2px solid #333; /* Add a top border to the first article in the main content */
-}
-
-footer:after {
-    content: " - All rights reserved"; /* Add content after the footer text */
-    color: #666;
-}
-
-/* Pseudo-elements */
-body::before {
-    content: "🌟"; /* Add content before the entire body */
-    font-size: 2em;
-    color: #ffcc00;
-}
-
-article::after {
-    content: "Read More"; /* Add content after each article */
-    display: block;
-    color: #0088cc;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-nav a::before {
-    content: "\2022"; /* Add a bullet before each navigation link */
-    margin-right: 5px;
-    color: #333;
-}
-
-footer::before {
-    content: "Last updated: "; /* Add content before the footer text */
-    color: #999;
-}
-
-/* Add this CSS to your style.css file */
-
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-.content {
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.section {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.filtered-image {
-    width: 100%;
-    max-width: 400px;
-    filter: grayscale(50%) blur(4px);
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Add this CSS to your style.css file */
-
-#card1:hover {
-    transform: scale(1.1);
-}
-
-#card2:hover {
-    transform: rotate(10deg);
-}
-
-footer {
-    animation: slide-up 0.5s ease-out;
-}
-
-@keyframes slide-up {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f6e0b5;
-  color: #66545e;
+    min-height: 100vh;
 }
-
 header {
-  background-color: #a39193;
-  padding: 20px;
-  text-align: center;
-  color: azure;
-}
-nav > ul {
-  list-style: none;
-  padding: 0;
-  background-color: #aa6f73;
-  color: crimson;
-  display: flex;
-  justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-nav a {
-  text-decoration: none;
-  color: rebeccapurple;
-  padding: 10px;
-  transition: background-color 0.3s ease;
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
 }
-nav a:hover {
-  background-color: #ee9092;
-  color: pink;
-}
-
-section {
-  padding: 20px;
-  color: #eea990;
-}
-
-section h2 {
-  color: #aa6f73;
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
 }
 
-article {
-  margin-bottom: 20px;
+.navigation a:hover,
+.navigation a.active {
+    color: #333;
+
 }
 
-article + article {
-  border-top: 1px solid;
-  color: #66545e;
+.navigation a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 40px;
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+    transition: .5s;
+}
+.navigation a:hover span,
+.navigation a.active span
+{
+    transform: scale(1);
+    opacity: 1;
+
 }
 
-footer {
-  background-color: #b4505c;
-  color: #a39193;
-  text-align: center;
-  padding: 10px;
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('photo_5240093382724929394_y.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.content {
-      background-color: #c41717;
-      padding: 20px;
-      border: 1px solid #e88686ccc;
-      border-radius: 5px;
-      margin: 20px;
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 4px 5px #737875;
+}
+.sec {
+    position: relative;
+    background: #6a6868;
+    padding: 100px 30px;
 }
 
-.hidden {
-      visibility: hidden;
-      opacity: 0;
-}
-.website-link {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background-color: #007BFF;
-      color: #923535;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
+.sec h2 {
+    font-size: 3em;
+    color: #2a2929;
+    margin-bottom: 10px;
 }
 
-    .website-link:hover {
-      background-color: #0056b3;
+.products .card {
+    width:110px;
+    background: #f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
 }
- 
+
+.products .card img {
+    height: 5px;
+    width: 100%;
+}
+
+.products .card .desc {
+    padding: 5px 20px;
+    opacity: 0.8;
+
+}
+
+.products .card .title {
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.products .card .box {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px;
+
+}
+
+.buy {
+    color: white;
+    font-weight: 500;
+    background-color: black;
+    display: flex;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 10%;
+    border: 1px solid black;
+}
+
+.buy:hover {
+    background-color: #2a2929;
+    color: white;
+}
